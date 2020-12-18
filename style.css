@@ -2,4 +2,37 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    margin: 0 auto;
 }
+body{
+    background: url(./assets/background.png) no-repeat fixed;
+}
+
+#wrap{
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    width: 1080px;
+    height: 80px;
+    background-color: rgb(51, 50, 50);
+}
+#center{
+    width: 1080px;
+    height: 600px;
+    background-color: rgb(51, 50, 50);
+    opacity: .3;
+}
+#world_preview{
+    opacity: 65%;
+    width: 1080px;
+    height: 200px;
+
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 10px 4px 5px #000000;
+}
+
