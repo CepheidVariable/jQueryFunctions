@@ -28,8 +28,9 @@ body{
     width: 1440px;
     height: 600px;
     background-color: rgba(21, 24, 21, 0.3);
-    /* display: flex; */
-    /* justify-content: space-evenly; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #center img{
     display: block;
@@ -40,6 +41,8 @@ body{
     width: 778px;
     height: 480px;
     overflow: hidden;
+    display: inline-block;
+    text-align: center;
 }
 .slider p{
     right: 40px;
