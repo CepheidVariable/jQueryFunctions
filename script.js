@@ -7,25 +7,31 @@ $(document).ready(function() {
     $("#world_preview div:nth-child(2)").addClass("slideShow2");
     $("#world_preview div:nth-child(3)").addClass("slideShow3");
     $("#world_preview div:nth-child(4)").addClass("slideShow4");
-
     $("#world_preview").addClass("flexing");
+
     $("#world_preview img").attr("alt", "World Gallery Image");
+
+    $("#footer").html("<p></p>");
+    $("#footer p").text("Created by: Jemal Agayeva and Robert Woodard");
+    $("#center").before("<div id='header'></div>");
+    $(".slider h2").after("<p>Some testing text here</p>");
+
     $(".slider").mouseover(function(){
       $(".slider img").css("transition" , "all .2s ease-in-out");
       $(".slider img").css("transform" , "scale(1.15)");
-      $(".slider p").css("transition" , "all .2s ease-in-out");
-      $(".slider p").css("transform" , "translateY(-240px)");
+      $(".sliderBody").css("transition" , "all .2s ease-in-out");
+      $(".sliderBody").css("transform" , "translateY(-240px)");
     });
     $(".slider").mouseleave(function(){
-      $(".slider img").css("transition" , "all .2s ease-in-out");
       $(".slider img").css("transform" , "scale(1)");
-      $(".slider p").css("transition" , "all .2s ease-in-out");
-      $(".slider p").css("transform" , "translateY(-120px)");
+      $(".sliderBody").css("transform" , "translateY(-80px)");
     });
-
-    // $(".btn").click(function(){
-    //   $(".btn").
-    // });
+    $(".slider").mouseenter(function(){
+      $(".slider p").slideDown(2000);
+    });
+    $(".slider").mouseleave(function(){
+      $(".slider p").slideUp(0);
+    });
 
 
     $(".slideShow1").click(function(){
