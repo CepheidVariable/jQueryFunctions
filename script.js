@@ -10,10 +10,19 @@ $(document).ready(function() {
 
     $("#world_preview").addClass("flexing");
     $("#world_preview img").attr("alt", "World Gallery Image");
-    $(".slider p").mouseover(function(){
-      $(".slider p").alert();
-      $(".slider p").css("transform","translate(- 240 px)");
+    $(".slider").mouseover(function(){
+      $(".slider img").css("transition" , "all .2s ease-in-out");
+      $(".slider img").css("transform" , "scale(1.15)");
+      $(".slider p").css("transition" , "all .2s ease-in-out");
+      $(".slider p").css("transform" , "translateY(-240px)");
     });
+    $(".slider").mouseleave(function(){
+      $(".slider img").css("transition" , "all .2s ease-in-out");
+      $(".slider img").css("transform" , "scale(1)");
+      $(".slider p").css("transition" , "all .2s ease-in-out");
+      $(".slider p").css("transform" , "translateY(-120px)");
+    });
+
     // $(".btn").click(function(){
     //   $(".btn").
     // });

@@ -40,12 +40,11 @@ body{
     width: 778px;
     height: 480px;
     overflow: hidden;
-
 }
 .slider p{
     right: 40px;
     background-color: rgba(10, 12, 10, 0.75);
-    transform: translateY(-120px);
+    transform: translateY(-100px);
     color: snow;
     width: 778px;
     height: 240px;
