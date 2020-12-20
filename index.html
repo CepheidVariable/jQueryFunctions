@@ -6,10 +6,6 @@
         <title>Exploring in Minecraft</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-        crossorigin="anonymous"></script> -->
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- Bootstrap CSS -->
@@ -19,14 +15,23 @@
     <body>
         <div id="wrap">
             <div id="center">
-                <span><button type="button" class="btn btn-outline-success btn-lg">PREV</button></span>
-                <div class="slider">
-                    <img src="./assets/center1.png" alt="">
+                <button type="button" id="prev" class="btn btn-success btn-lg">PREV</button>
+                <div class="slideshow">
+                    <div id="slideshow">
+                        <img src="./assets/center1.png" alt="">
+                        <img src="./assets/center2.png" alt="">
+                        <img src="./assets/center3.png" alt="">
+                        <img src="./assets/center4.png" alt="">
+                        <img src="./assets/center5.png" alt="">
+                        <img src="./assets/center6.png" alt="">
+                        <img src="./assets/center7.png" alt="">
+                        <img src="./assets/center8.png" alt="">
+                    </div>
                     <div class="sliderBody">
                         <h2>Minecraft Realms Today</h2>
                     </div>
                 </div>
-                <span><button type="button" class="btn btn-outline-success btn-lg">NEXT</button></span>
+                <button type="button" id="next" class="btn btn-success btn-lg">NEXT</button>
             </div>
             <div id="world_preview">
                 <div>
@@ -93,26 +98,17 @@
                 <div class="dropdown2">
                     <h2>Beauty with Six Polygons</h2>
                     <p>Using mods to create a cozy feel. Add new textures, models, ambient sounds, and more!</p>
-
                 </div>
                 <div class="dropdown3">
                     <h2>It's in the Details</h2>
                     <p>Using mods to create a cozy feel. Add new textures, models, ambient sounds, and more!</p>
-
                 </div>
                 <div class="dropdown4">
                     <h2>Technology in Three Dimensions</h2>
                     <p>Using mods to create a cozy feel. Add new textures, models, ambient sounds, and more!</p>
-
                 </div>
             </div>
-            <div id="footer"></div>
         </div>
-        
-    <script>
-        $(document).ready(function() {
-            // your jquery codes here
-        });
-        </script>
+        <div id="footer"></div>
     </body>
 </html>

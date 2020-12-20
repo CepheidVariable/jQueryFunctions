@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 body{
     background: url(./assets/background.png) no-repeat fixed;
@@ -11,9 +10,8 @@ body{
 
 #wrap{
     width: 1440px;
-    height: 2560px;
+    height: 2000px;
     margin: 0 auto;
-    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -21,70 +19,85 @@ body{
     width: 1440px;
     height: 80px;
     background-color: rgb(51, 50, 50, .95);
-    border-bottom: 8px solid  rgb(167, 73, 73);
-
+    border-bottom: 6px solid  rgb(167, 73, 73);
+    display: flex;
+    justify-content: end;
+}
+.push{
+    height: 120px;
+}
+form{
+    padding: 20px 50px 0 0;
+}
+input{
+    text-align: center;
 }
 #center{
     width: 1440px;
-    height: 600px;
+    height: 480px;
     background-color: rgba(21, 24, 21, 0.3);
     display: flex;
-    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 20px 0;
 }
-#center span:first-child{
-    padding-left: 130px;
+.btn{
+    opacity: .8;
 }
-#center span:last-child{
-    padding-right: 130px;
-}
-#center img{
-    display: block;
-    /* margin: 15px 20px; */
-    /* border: 8px solid  rgb(167, 73, 73); */
-}
-.slider{
+#slideshow{
+    position: relative;
     width: 778px;
     height: 480px;
     overflow: hidden;
-    display: inline-block;
-    text-align: center;
+}
+#slideshow img{
+    width: 778px;
+    height: 480px;
+    display: none;
+    position: absolute;
+}
+#slideshow img:first-child{
+    display: inline;
+}
+.slideshow{
+    overflow: hidden;
 }
 .sliderBody{
-    right: 40px;
     background-color: rgba(10, 12, 10, 0.75);
     transform: translateY(-80px);
     color: snow;
     width: 778px;
     height: 240px;
 }
-.slider h2{
+.sliderBody h2{
     height: 80px;
     line-height: 80px;
+    text-align: center;
 }
-.slider p{
+.sliderBody p{
     display: none;
     height: 240px;
     color: seashell;
+    text-align: center;
 }
 #world_preview{
     width: 1440px;
     height: 300px;
-    border-top: 8px solid  rgb(167, 73, 73);
+    border-top: 6px solid  rgb(167, 73, 73);
     background-color: rgba(10, 12, 10, 0.75);
-    /* box-shadow: 2px 4px 4px 5px #000000; */
+    padding: 0 20px;
 }
 #descrip{
     width: 1440px;
     background-color: rgb(0, 0, 0, .65);
-
 }
 #descrip div{
     display: none;
     height: 400px;
     color: blanchedalmond;
-
+    padding: 20px;
 }
-.prev{
+.preview{
     width: 335px;
     height: 280px;
     background-color: blueviolet;
@@ -103,16 +116,20 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.push{
+    height: 120px;
+}
 #footer{
-    display: flex;
-    align-items: flex-end;
-    width: 1440px;
-    height: 80px;
     background-color: rgb(51, 50, 50, .95);
     border-top: 8px solid  rgb(167, 73, 73);
     color: seashell;
     font-size: 10pt;
+    line-height: 120px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 #footer p{
-    padding-left: 1132px;
+    margin-bottom: -16px;
 }
